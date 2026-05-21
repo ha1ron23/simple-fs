@@ -17,21 +17,13 @@ cargo run
 ```
 
 ## Commands
-create <path> [content]   – create a new file
-read   <path>             – print file content
-write  <path> <content>   – overwrite an existing file
-delete <path>             – remove a file or directory
-list   [dir]              – show contents (default: current dir)
-exit / quit               – exit the shell
-
-## Example
-> create docs/foo.txt Hello
-> read docs/foo.txt
-Content: Hello
-> write docs/foo.txt HelloWorld
-> list docs
-  foo.txt
-> delete docs/foo.txt
+| Command | Description | Example |
+| :------ | :---------- | :------ |
+| `create <path> [content]` | Create a new file | `create docs/foo.txt Hello` |
+| `read <path>` | Print file content | `read docs/foo.txt` |
+| `write <path> <content>` | Overwrite an existing file | `write docs/foo.txt HelloWorld` |
+| `delete <path>` | Delete a file or directory | `delete docs/foo.txt` |
+| `list [dir]` | List directory contents (default: current dir) | `list docs` |
 
 ## License
 MIT License
